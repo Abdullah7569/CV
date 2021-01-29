@@ -1,66 +1,75 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>IlyasAbdullah</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="Images/favicon.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>memory cards</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-
-
   <body>
-
-    <div class="top-container">
-                <img class="top_cloud" src="Images/cloud.png" alt="cloud-image">
-                <h1 class="" >Ilyas Abdullah</h1>
-                <h2 class="text" >i am a programmer</h2>
-                <img class="bottom_cloud" src="Images/cloud.png" alt="cloud-image">
-                <img class="mountain" src="Images/mountain.png" alt="mountain-image">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <button id="clear" class="clear btn">
+      <i class="fas fa-trash"></i>Clear cards
+    </button>
+    <h1>
+      Memory cards
+      <button id="show" class="btn btn-small">
+        <i class="fas fa-plus"></i>add new card
+      </button>
+    </h1>
+    <div id="cards-container" class="cards"></div>
+    <div class="navigation">
+      <button id="prev" class="nav-button">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <p id="current"></p>
+      <button id="next" class="nav-button">
+        <i class="fas fa-arrow-right"></i>
+      </button>
     </div>
-
-
-    <div class="middle-container">
-      <div class="profile">
-        <img src="Images/circle-cropped.png" alt="profile-picture">
-        <h2>Hello.</h2>
-        <p>I am BE third year student from India. Nice to meet you.</p>
+    <div id="add-container" class="add-container">
+      <h1>
+        add new cards
+        <button id="hide" class="btn btn-small btn-ghost">
+          <i class="fas fa-times"></i>
+        </button>
+      </h1>
+      <div class="form-group">
+        <label for="question"></label>
+        <textarea
+          name="question"
+          id="question"
+          placeholder="enter question..."
+        ></textarea>
       </div>
-      <hr class="line">
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-        <img class="computer" src="https://img.icons8.com/bubbles/500/000000/android-os.png"/>
-
-          <h3>Android Development</h3>
-          <p>I am specialized in Android Development.I build amazing native apps for android.JAVA and Android Studio are my preferred tools</p>
-        </div>
-        <div class="skill-row">
-        <img class="chilli" src="https://img.icons8.com/color/480/000000/adobe-photoshop.png"/>
-          <h3>Photo and Video Editing</h3>
-          <p>I am also equally adept in editing photos and videos. I can turn your boring profile pictures into dazzling beautifull looking images.I can also do basic video editing and manipulation  </p>
-        </div>
+      <div class="form-group">
+        <label for="answer"></label>
+        <textarea
+          name="answer"
+          id="answer"
+          placeholder="enter answer..."
+        ></textarea>
       </div>
-      <hr class="line">
-          <div class="contact-me">
-          <h2>Get In Touch</h2>
-            <h3>Are you looking for a developer</h3>
-            <p>If you are looking for a developer or someone to partner up with for your projects <br>then what are you waiting for Contact me immediately</p>
-            <a href="mailto:mohd.abdallah0101@gmail.com" class="BUTTON_OGT">Contact Me</a>
-          </div>
-
+      <button id="add-card" class="btn">
+        <i class="fas fa-plus"></i>Add card
+      </button>
     </div>
 
-
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/">Twitter</a>
-        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-        <p>© 2021 Ilyas Abdullah.</p>
-    </div>
-
-
-
+    <script src="script.js" async defer></script>
   </body>
 </html>
